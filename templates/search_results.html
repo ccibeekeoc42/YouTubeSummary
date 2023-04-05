@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Results</h1>
+    <iframe width="400" height="300" src="{{ url }}" frameborder="0" allowfullscreen></iframe>
+    {% if results %}
+        <p>{{results}}</p>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/loading.css') }}">
+    </head>
+    <body>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" id="logo" alt="Logo">
+
+        <h1>Search</h1>
+        <form method="GET" action="/search">
+            <!-- <label for="query">Enter a search query: </label><br> -->
+            <input type="text" name="query" id="query" placeholder="Enter a search query..."><br>
+            <textarea name="query" placeholder="Enter details of search..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+    </body>
+
+</html>
